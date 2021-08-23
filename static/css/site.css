@@ -22,6 +22,46 @@ body {
     max-width: 960px;
 }
 
+/* UI & Buttons */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #333333;
+  font-weight: bold;
+  color: #999999;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: rgb(99, 99, 99);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(22, 22, 22);
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character fo:width:  "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 /* MAIN LINKS SECTION */
 
 ul {  
@@ -30,7 +70,8 @@ ul {
 
 a {
     text-decoration: none;
-    color: #32dd72;
+    font-weight: bold;
+    color: #08c44d;
     /*color: var(--links);*/
 }
 
@@ -38,7 +79,8 @@ a {
   min-width: 30% !important;
   color: #AAAAAA;
   position: absolute;
-  background-color: #333333; 
+  background-color: #333333;
+  max-width: 960px; 
     border-radius: 30px;
     width: auto;
     height: auto; 
