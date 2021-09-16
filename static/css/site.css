@@ -52,7 +52,7 @@ body {
 }
 
 .collapsible:after {
-  content: '\02795'; /* Unicode character fo:width:  "plus" sign (+) */
+  content: 	"\21F1"; /* Unicode character fo:width:  "plus" sign (+) */
   font-size: 13px;
   color: white;
   float: right;
@@ -60,7 +60,13 @@ body {
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: '\21F2'; /* Unicode character for "minus" sign (-) */
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
 /* MAIN LINKS SECTION */
@@ -114,10 +120,10 @@ input {
 
   .random {
     position: absolute;
-    right: 20px
+    right: 35px
   }
  
-  button {
+  button.random {
     color:#999999;
     background-color: #181818;
     /*background-color: var(--background);*/
@@ -129,7 +135,11 @@ input {
     border: none;
     border-radius: 6px;
     outline: none;
-}
+  }
+
+  button, select, input[type='submit'], input[type='button'], input[type='checkbox'], input[type='range'], input[type='radio'] {
+    cursor: pointer;
+  }
 
   /* SITE THEMES */
 
