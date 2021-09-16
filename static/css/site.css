@@ -46,6 +46,7 @@ body {
 .content {
   padding: 0 18px;
   display: none;
+  overflow-wrap: break-word;
   overflow: hidden;
   background-color: rgb(22, 22, 22);
 }
@@ -63,12 +64,12 @@ body {
 }
 
 /* MAIN LINKS SECTION */
-
 ul {  
     list-style-type: none;
 }
 
 a {
+    overflow: auto;
     text-decoration: none;
     font-weight: bold;
     color: #08c44d;
