@@ -112,5 +112,24 @@ input {
       left: 35px;
   }
 
+  .random {
+    position: absolute;
+    right: 20px
+  }
+ 
+  button {
+    color:#999999;
+    background-color: #181818;
+    /*background-color: var(--background);*/
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
   /* SITE THEMES */
 
