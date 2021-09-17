@@ -11,7 +11,6 @@ function search() {
     for (i = 0; i < ul.length; i++) {
         topics = ul.item(i);
         li = topics.getElementsByTagName("li");
-        console.log(li);
         
         for (j = 0; j < li.length; j++) {
             span = li[j].getElementsByTagName("span")[0];

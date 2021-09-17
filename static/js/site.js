@@ -1,12 +1,28 @@
+// Global
+var siteList = document.getElementsByClassName("links");
+
 // Link Counter
 function displayLinks() {
-    var siteList = document.getElementsByClassName("links");
-
     for (i = 0; i < siteList.length; i++) {
         linkList = siteList[i].getElementsByTagName("a");
     }
 
     var linkCount = document.getElementById("link-count").innerHTML = linkList.length;
+}
+
+// Link Counter Topic Specific
+function displayLinksTopic() {
+  siteDiv = siteList.item(0);
+  ul = siteDiv.getElementsByClassName("content")
+  topicLabels = document.getElementsByClassName("topic-count");
+  for (i = 0; i < ul.length; i++) {
+    
+    linkList = ul[i].getElementsByTagName("a");
+    topicCount = linkList.length;
+    topicLabels.item(i).innerHTML = "(" + topicCount + ")"
+  }
+
+
 }
 
 // Collapse 
