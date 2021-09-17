@@ -22,6 +22,11 @@ body {
     max-width: 960px;
 }
 
+.main-section {
+  height: 100%;
+  padding-bottom: 5%;
+}
+
 /* UI & Buttons */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -83,9 +88,10 @@ a {
 }
 
 .links{
+  padding-bottom: 25px;
   min-width: 30% !important;
   color: #AAAAAA;
-  position: absolute;
+  position: relative;
   background-color: #333333;
   max-width: 960px; 
     border-radius: 30px;
@@ -139,6 +145,14 @@ input {
 
   button, select, input[type='submit'], input[type='button'], input[type='checkbox'], input[type='range'], input[type='radio'] {
     cursor: pointer;
+  }
+
+  footer {
+    padding-top: 20px;
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    bottom: 0px;
   }
 
   /* SITE THEMES */
